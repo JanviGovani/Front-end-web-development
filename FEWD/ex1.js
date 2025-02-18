@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+    <table>
+        <thead>
+            <th>
+                S.No.
+            </th>
+            <th>
+                Name
+            </th>
+            <th>
+                Picture
+            </th>
+            <th>
+                CV
+            </th>
+            <th>
+                Links
+                <href>#webpage1<a></a></href>
+            </th>
+            <button>
+                Submit(.pdf)
+            </button>
+            <
+        </thead>
+    </table>
+    </body>
+</html>

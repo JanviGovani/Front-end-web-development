@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>table</title>
+    <style>
+      .container {
+        overflow-x: auto;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        height: 100vh; /* Make container fill the viewport height */
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <thead>
+          <th>S.no</th>
+          <th>Name</th>
+          <th>image</th>
+          <th>cv</th>
+          <th>link</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Alex</td>
+            <td><img src="img1.png" /></td>
+            <td><input type="file" accept="application/pdf" /></td>
+            <td><a href="www.google.com">link</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>cadence</td>
+            <td><img src="img1.png" /></td>
+            <td><input type="file" accept="application/pdf" /></td>
+            <td><a href="www.google.com">link</a></td>
+            
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
