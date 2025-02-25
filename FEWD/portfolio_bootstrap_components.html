@@ -1,0 +1,205 @@
+<!-- used CARDS - proj details
+contact details - FORM
+academic details - TABLE
+technical qualifications - BADGES
+NAVBAR for top 
+achievements - CAROUSEL
+use BREAKPOINTS and TEMPLATES also
+use RESPONSIVE UTILITIES also-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Janvi Govani</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- BREAKPOINT - .container-fluid instead of .container → Full-width layout for all screens.-->
+
+    <!--Bootstrap Templates (Prebuilt Components)
+    Card Groups (.card-group) in Projects → Automatic equal-height cards.
+    Carousel (.carousel slide) in Achievements → Auto-adjusts slides based on screen size.
+    Responsive Table (.table-responsive) in Education → Enables horizontal scrolling on small screens.
+    Form Layout (.row .col-md-6) in Contact Info & Feedback → Two-column layout on medium+ screens.-->
+
+    <!-- NAVBAR -->
+
+    <!--RESPONSIVE UTILITY - 
+    .ms-auto pushes navbar items to the right.-->
+     <!--bg-primary applies bootstrap primary color blue-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--navbar-expand-lg makes navbar collapsible for smaller screens-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Janvi Govani</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <h2 class="text-center">Self Introduction</h2>
+        <p class="text-center">Hello! I am Janvi Govani, a passionate Computer Science student with a keen interest in competitive programming.</p>
+        
+        <!--badge provides small rounded boxes for catchy look-->
+        <!--bg-success,etc provide visual differentiation among various badges-->
+
+
+        <hr>
+        <h2 id="skills">Skills</h2>
+        <div class="d-flex flex-wrap gap-2">
+            <span class="badge bg-primary">HTML</span>
+            <span class="badge bg-secondary">CSS</span>
+            <span class="badge bg-success">JavaScript</span>
+            <span class="badge bg-danger">React</span>
+            <span class="badge bg-warning">Node.js</span>
+            <span class="badge bg-info">MongoDB</span>
+            <span class="badge bg-dark">Java</span>
+        </div>
+        
+        <!--RESPONSIVE UTILITY - .col-md-6 ensures two-column layout for project cards on medium screens and above.-->
+
+        <!--CARDS -  create bordered container for projects-->
+        <!--.card-body provides padding and spacing.
+        .card-title and .card-text style headings and descriptions.
+        .btn styles links as buttons (e.g., .btn-primary applies Bootstrap's blue theme).-->
+
+        <hr>
+        <h2 id="projects">Projects / Work Experience</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Java project built using Maven.</p>
+                        <a href="https://github.com/JanviGovani/SampleMavenJavaProject" class="btn btn-primary btn-lg" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Maven-based Web project.</p>
+                        <a href="https://github.com/JanviGovani/SampleMavenWebProject" class="btn btn-primary btn-lg" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--CAROUSEL - Enables a sliding effect for achievements.
+        .carousel-inner holds the items, .carousel-item defines each slide.
+        .carousel-control-prev and .carousel-control-next allow navigation.-->
+
+        <hr>
+        <h2>Achievements</h2>
+        <div id="achievementCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="text-center">🏆 Best Project award in coding Hackathon</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="text-center">💻 Completed projects with positive client feedback.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--TABLE 
+        .table-striped provides alternating row colors.
+        .table-primary styles the header row with a blue background.-->
+
+        <hr>
+        <h2 id="education">Education Profile</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">KMIT</h5>
+                        <p>Years Studied: 2022 - 2026</p>
+                        <p>CGPA: 8.7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">KSJC</h5>
+                        <p>Years Studied: 2020 - 2022</p>
+                        <p>CGPA: 9.7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <h5 class="card-title">NIRAJ PUBLIC SCHOOL</h5>
+                        <p>Years Studied: 2010 - 2020</p>
+                        <p>CGPA: 9.55</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--FORM
+        .border adds a border around the contact form.
+        .p-3 applies padding.
+        .mb-3 ensures spacing between fields.
+        .form-label styles form labels.-->
+        <hr>
+        <h2 id="contact">Contact Information</h2>
+        <button type="button" class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#contactModal">View Contact Info</button>
+        
+        <div class="modal fade" id="contactModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Email: janvigovani05@gmail.com</p>
+                        <p>Phone: +9100640082</p>
+                        <p>LinkedIn: linkedin.com/in/JanviGovani</p>
+                        <p>GitHub: github.com/JanviGovani</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card p-3 shadow-lg">
+                    <h2 class="text-center">Feedback</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control" placeholder="Enter Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedback" class="form-label">Feedback:</label>
+                            <textarea id="feedback" name="feedback" class="form-control" rows="3" placeholder="Enter Feedback here"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
